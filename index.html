@@ -1,46 +1,117 @@
-<!doctype html>
-<html class="no-js" lang="">
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-
-  <meta name="theme-color" content="#fafafa">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;300&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<a href="#">lhasrlaflh</a>
-<div>lhasfhadfk</div>
-<p>alfh agfldgkdlsg</p>
-<span>asdlhar lfg</span>
-<strong>asdhaf s</strong>
-<em>akfhg fks</em>
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+   <nav class="navbar">
+       <div class="navbar__container">
+          <a href="/" id="navbar__logo"><i class="fa-solid fa-mug-hot"></i> Nola Beans</a> 
+          <div class="navbar__toggle" id="mobile-menu">
+              <span class="bar"></span> <span class="bar"></span>
+              <span class="bar"></span>
+          </div>
+          <ul class="navbar__menu">
+              <li class="navbar__item">
+                  <a href="/" class="navbar__links">Home</a>
+              </li>
+              <li class="navbar__item">
+                <a href="/tech.html" class="navbar__links">Contact</a>
+            </li>
+            <li class="navbar__item">
+                <a href="/" class="navbar__links">Hours</a>
+            </li>
+            <li class="navbar__btn">
+                <a href="/" class="button">Menu</a>
+            </li>
+          </ul>
+       </div>
+   </nav>
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+   <!--Hero Section-->
+   <div class="main"></div>
+   <div class="main__container">
+       <div class="main__content">
+           <h1>Nola Beans</h1>
+           <h2>NOLA Beans is one of Lakeview’s home grown businesses. It’s a meeting place, a coffee shop, a casual and healthy dining spot. In short: it’s an extension of the favorite room in your house – our kitchen is your kitchen.
+
+            Owned and operated by locals, NOLA Beans provides comfort food, exquisite coffee and sublime desserts in a relaxed setting.
+            
+            Drop in anytime! We’re open for business, and we’re eager to serve you. We’re energized about this community. We’re gaga over going's on! And, we’re excited about laying a foundation at the heart of Harrison Ave.
+            
+            </h2>
+           <p>See what makes us different.</p>
+           <button class="main__btn"><a href="/">Location</a></button>
+       </div>
+       <div class="main__img--container">
+           <img src="nb.jpg" alt="pic" id="main__img">
+       </div>
+   </div>
+
+   <!--services section-->
+   <div class="services">
+       <h1>Come try the best coffee in the city</h1>
+       <div class="services__container">
+        <div class="services__card">
+            <h2>Beverage and Breakfast Menu</h2>
+            <p>view our variety of drinks and breakfast options</p>
+            <button>Click Here</button>
+       </div>
+       <div class="services__card">
+        <h2>Lunch Menu</h2>
+        <p>view our variety of lunch options</p>
+        <button>Click Here</button>
+       </div>
+     </div>
+   </div>
+   
+   <!-- Footer Section-->
+   <div class="footer__container">
+       <div class="footer__links">
+           <div class="footer__link--wrapper">
+            <div class="footer__link--items">
+                <h2>More</h2>
+                <a href="/">Retail and Art</a>
+                <a href="/">Contact Us</a>
+                <a href="/">Apply</a>
+                <a href="/">Comments</a>
+                <a href="/">Tag us</a>
+            </div>
+           </div>
+       </div>
+       <div class="social__media">
+           <div class="social__media--wrap">
+               <div class="footer__logo">
+                   <a href="/" id="footer__logo"><i class="fa-solid fa-mug-hot"></i>Nola Beans</a>
+               </div>
+               <p class="website__rights">Nola Beans 2008. All rights reserved.</p>
+               <div class="social__icons">
+                   <a href="/" class="social__icon--link" target="_blank">
+                       <i class="fab fa-facebook"></i>
+                   </a>
+                   <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+               </div>
+           </div>
+       </div>
+   </div>
+
+
+   <script> src="app.js"</script>
 </body>
-
 </html>
